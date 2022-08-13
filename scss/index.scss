@@ -269,3 +269,47 @@ img {
     filter: invert(0.7);
   }
 }
+
+// ===== FEATURES SECTION =====
+.features {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.8fr));
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 2rem;
+    text-align: center;
+
+    &-img {
+      justify-self: center;
+    }
+
+    &-title {
+      font-size: 20px;
+      font-weight: $font-bold;
+      color: $black-color;
+      text-transform: capitalize;
+      line-height: $leading-title;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-text {
+      font-size: 15px;
+      color: $grey-color;
+      line-height: $leading-text;
+    }
+  }
+}
