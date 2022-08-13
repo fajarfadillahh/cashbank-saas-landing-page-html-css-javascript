@@ -313,3 +313,62 @@ img {
     }
   }
 }
+
+// ===== EXPERIENCE SECTION =====
+.experience {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__img,
+  &__data {
+    text-align: center;
+    justify-self: center;
+  }
+
+  &__img {
+    filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.2));
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__item {
+    text-align: center;
+    padding: 1rem 0.5rem;
+    background-color: $white-color;
+    border-radius: 10px;
+
+    &:hover {
+      background-image: linear-gradient(
+        45deg,
+        $dark-blue-color,
+        $light-blue-color
+      );
+
+      & .experience__item-number,
+      & .experience__item-tag {
+        color: $white-color;
+      }
+    }
+
+    &-number {
+      font-size: 20px;
+      font-weight: $font-bold;
+      color: $black-color;
+      margin-bottom: $margin-0-5;
+    }
+
+    &-tag {
+      font-size: 15px;
+      font-weight: $font-semibold;
+      text-transform: capitalize;
+      color: $grey-color;
+    }
+  }
+}
