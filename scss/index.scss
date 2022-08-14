@@ -394,3 +394,16 @@ img {
     }
   }
 }
+
+// ===== SUPPORT SECTION =====
+.support {
+  &__container {
+    gap: 2rem;
+  }
+
+  &__data,
+  &__img {
+    text-align: center;
+    justify-self: center;
+  }
+}
