@@ -372,3 +372,25 @@ img {
     }
   }
 }
+
+// ===== ABOUT SECTION =====
+.about {
+  &__group {
+    gap: 6rem;
+  }
+
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &-data,
+    &-img {
+      text-align: center;
+      justify-self: center;
+    }
+
+    &-img {
+      filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.2));
+    }
+  }
+}
